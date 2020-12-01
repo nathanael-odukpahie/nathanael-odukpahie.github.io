@@ -1,0 +1,617 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimal-ui">
+    <title>FCMB SMEHub</title>
+    <meta content="FCMB SMEHub" name="description">
+    <meta content="Adeniran Opeyemi" name="author">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- App Icons -->
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <!--Morris Chart CSS -->
+    <link rel="stylesheet" href="plugins/morris/morris.css"><!-- Basic Css files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/index.css" rel="stylesheet" type="text/css">
+
+    <link href="plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" rel="stylesheet">
+
+    <!-- Datable -->
+    <link href="plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css">
+    <link href="plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css"><!-- Responsive datatable examples -->
+    <link href="plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body class="fixed-left">
+    <!-- Loader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner"></div>
+        </div>
+    </div><!-- Begin page -->
+    <div id="wrapper">
+        <!-- Top Bar Start -->
+        <div class="topbar">
+            <!-- LOGO -->
+            <div class="topbar-left">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/smelogo.png" alt="" height="40" class="logo-large">
+                    <img src="assets/images/smelogo.png" alt="" height="22" class="logo-sm">
+                </a>
+            </div>
+            <nav class="navbar-custom">
+                <!-- Search input -->
+                <ul class="navbar-right d-flex list-inline float-right mb-0">
+                    <li class="list-inline-item dropdown notification-list d-none d-md-block">
+                        <a class="nav-link waves-effect toggle-search" href="http://on.fcmb.com/YourAccountIn4Minutes-Website" target="_blank">Open an Account</a>
+                    </li>
+                    <li class="list-inline-item dropdown notification-list d-none d-md-block">
+                        <a href="#" class="nav-link dropdown-toggle arrow-none waves-effect nav-user" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Internet Banking</a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated profile-dropdown" style="width: auto; position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(-152px, 60px, 0px);" x-placement="bottom-end">
+                            <a class="dropdown-item" href="https://ibank.fcmb.com/Individual-Banking.aspx" target="_blank"><i class="dripicons-user text-muted"></i>Personal</a>
+                            <a class="dropdown-item" href="https://ibank.fcmb.com/corporate/BbgLoginScreenUI.aspx" target="_blank"><i class="dripicons-user text-muted"></i>Business</a>
+                            <a class="dropdown-item" href="https://flashmecash.firstcitygrouponline.com/" target="_blank"><i class="dripicons-user text-muted"></i>FlashmeCash</a>
+                            <a class="dropdown-item" href="https://www.fcmbonline.com/" target="_blank"><i class="dripicons-user text-muted"></i>Corporate</a>
+                        </div>
+                    </li>
+                    <li class="list-inline-item dropdown notification-list">
+                        <a class="nav-link waves-effect toggle-search" href="https://www.fcmb.com/personal-contact-us-page" target="_blank">Contact Us</a>
+                    </li>
+                    <li class="list-inline-item dropdown notification-list">
+                        <a class="nav-link waves-effect toggle-search" href="#" data-toggle="modal" data-target="#faqsModal">FAQs</a>
+                    </li>
+                    <li class="list-inline-item dropdown notification-list">
+                        <a href="#" class="nav-link dropdown-toggle arrow-none waves-effect nav-user" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Courses</a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated profile-dropdown" style="width: auto; position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(-152px, 60px, 0px);" x-placement="bottom-end">
+                            <a class="dropdown-item" href=""><i class="dripicons-document text-muted"></i>Financial Management</a>
+                            <a class="dropdown-item" href=""><i class="dripicons-document text-muted"></i>Marketing</a>
+                            <a class="dropdown-item" href=""><i class="dripicons-document text-muted"></i>Technology</a>
+                            <a class="dropdown-item" href=""><i class="dripicons-document text-muted"></i>Human Resources</a>
+                            <a class="dropdown-item" href=""><i class="dripicons-document text-muted"></i>Business plans and models</a>
+                        </div>
+                    </li>
+                    <li class="list-inline-item dropdown notification-list"><a class="nav-link dropdown-toggle arrow-none waves-effect nav-user"
+                            data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                            <img
+                                src="assets/images/users/adeniran.jpg" alt="user" class="rounded-circle"> <span class="d-none d-md-inline-block ml-1">Adeniran
+                                Opeyemi<i class="mdi mdi-chevron-down"></i></span></a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated profile-dropdown"><a class="dropdown-item"
+                                href="account.html"><i class="dripicons-user text-muted"></i> Profile</a> <a class="dropdown-item"
+                                href="settings.html"><i class="dripicons-gear text-muted"></i>
+                                Settings</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="dripicons-exit text-muted"></i>
+                                Logout</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="list-inline menu-left mb-0">
+                    <li class="float-left"><button class="button-menu-mobile open-left waves-effect"><i class="mdi mdi-menu"></i></button></li>
+                </ul>
+            </nav>
+        </div><!-- Top Bar End -->
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="left side-menu">
+            <div class="slimscroll-menu" id="remove-scroll">
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu" id="side-menu">
+                        <li class="active"><a href="index.html" class="waves-effect active"><i class="dripicons-home"></i><span>
+                                    Dashboard</span></a></li>
+                        <li><a href="enrolled.html" class="waves-effect"><i class="dripicons-to-do"></i><span>
+                                    Enrolled Courses</span></a></li>
+                        <!-- <li><a href="courses.html" class="waves-effect"><i class="dripicons-network-2"></i><span>
+                                    Service Hub</span></a></li> -->
+                        <li><a href="loans.html" class="waves-effect"><i class="dripicons-card"></i><span>
+                                    Loans</span></a></li>
+                        <li><a href="webinar.html" class="waves-effect"><i class="dripicons-message"></i><span>
+                                    Webinar</span></a></li>
+                        <li class="has-submenu"><a href="#"><i class="dripicons-user-group"></i><span>Opportunity Network</span> <i class="mdi mdi-chevron-down mdi-drop"></i></a>
+                            <ul class="submenu">
+                                <li><a href="https://www.goldmansachs.com/citizenship/10000women/" target="_blank">Goldman Sachs</a></li>
+                                <li><a href="http://www.toryburchfoundation.org" target="_blank">Tory Burch Foundation</a></li>
+                                <li><a href="https://weconnectinternational.org" target="_blank">We Connect Foundation</a></li>
+                                <li><a href="https://nen.org.ng/" target="_blank">Nigeria Entrepreneurs Network</a></li>
+                                <li><a href="https://www.prowess.org.uk" target="_blank">Prowess women in Business</a></li>
+                                <li><a href="http://www.youthfortechnology.org" target="_blank">Youth for Technology Foundation</a></li>
+                                <li><a href="https://www.entrepreneur.com/women" target="_blank">Women Entrepreneur</a></li>
+                                <li><a href="https://femaleentrepreneurassociation.com/" target="_blank">Female Entrepreneur Association </a></li>
+                            </ul>
+                        </li>
+                        <!-- <li class="has-submenu"><a href="#"><i class="dripicons-user-group"></i><span>Community</span> <i class="mdi mdi-chevron-down mdi-drop"></i></a>
+                            <ul class="submenu">
+                                <li><a href="event-pictures.html">Women in Business</a></li>
+                                <li><a href="event-videos.html">FCMB Music</a></li>
+                            </ul>
+                        </li> -->
+
+                        <!-- <li><a href="competition.html" class="waves-effect"><i class="dripicons-inbox"></i><span>
+                                    Newsletter</span></a></li> -->
+
+                        <li><a href="mentors.html" class="waves-effect"><i class="dripicons-user"></i><span>
+                                    Mentors Hub</span></a></li>
+
+                        <li class="has-submenu"><a href="#"><i class="dripicons-user-group"></i><span>Merchant</span> <i class="mdi mdi-chevron-down mdi-drop"></i></a>
+                            <ul class="submenu">
+                                <li><a href="view-services.html">View Services</a></li>
+                                <li><a href="add-service.html">Add Service</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="account.html" class="waves-effect"><i class="dripicons-gear"></i><span>
+                                    My Account</span></a></li>
+                    </ul>
+                </div><!-- Sidebar -->
+                <div class="clearfix"></div>
+            </div><!-- Sidebar -left -->
+        </div><!-- Left Sidebar End -->
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="content-page">
+            <!-- Start content -->
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="page-title-box">
+                                <div class="row align-items-center">
+                                    <div class="col-md-8">
+                                        <h4 class="page-title mb-0">Dashboard</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <a href="#" class="col-md-4 col-xl-3">
+                                <div class="card bg-c-blue order-card">
+                                    <div class="card-block">
+                                        <h6 class="m-b-20">Enrolled Courses</h6>
+                                        <h4 class="text-right"><i class="fa fa-book f-left"></i><span>486</span></h2>
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="#" class="col-md-4 col-xl-3">
+                                <div class="card bg-c-green order-card">
+                                    <div class="card-block">
+                                        <h6 class="m-b-20">Events Registered</h6>
+                                        <h4 class="text-right"><i class="fa fa fa-calendar-check-o f-left"></i><span>486</span></h2>
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="#" class="col-md-4 col-xl-3">
+                                <div class="card bg-c-yellow order-card">
+                                    <div class="card-block">
+                                        <h6 class="m-b-20">Webinar</h6>
+                                        <h4 class="text-right"><i class="fa fa-laptop f-left"></i><span>486</span></h2>
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="#" class="col-md-4 col-xl-3">
+                                <div class="card bg-c-pink order-card">
+                                    <div class="card-block">
+                                        <h6 class="m-b-20">Service Request</h6>
+                                        <h4 class="text-right"><i class="fa fa-cart-plus f-left"></i><span>486</span></h2>
+                                        
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="col-md-4 col-xl-3">
+                                <div class="card bg-c-purple order-card">
+                                    <div class="card-block">
+                                        <h6 class="m-b-20">Current Ratings</h6>
+                                        <h4 class="text-right"><i class="fa fa-star f-left"></i><span>486</span></h2>
+                                        
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="col-md-4 col-xl-3">
+                                <div class="card bg-c-deep order-card" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <div class="card-block">
+                                        <h6 class="m-b-20">Opportunity Networks</h6>
+                                        <h4 class="text-right"><i class="fa fa-rocket f-left"></i><span>486</span></h2>
+                                        
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="col-md-4 col-xl-3">
+                                <div class="card bg-c-oze order-card" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <div class="card-block">
+                                        <h6 class="m-b-20">Business Intelligence</h6>
+                                        <h4 class="text-right"><img style="width: 40px; float: left; margin-top: -5px;margin-bottom: 7px" src="assets/images/oze.png"></h2>
+                                        
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div id="accordion">
+                          <div class="card">
+
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                  <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <div class="card product-sales">
+                                                <a href="https://www.goldmansachs.com/citizenship/10000women/" target="_blank">
+                                                <div class="card-body widget-card">
+                                                    <p class="text-muted">Goldman Sachs</p>
+                                                    <h5>Visit</h5>
+                                                    <img class="img-fluid widget-icon" src="https://fcmb.smezone.live/dh/assets/images/course.svg">
+                                                </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="card product-sales">
+                                                <a href="http://www.toryburchfoundation.org" target="_blank">
+                                                <div class="card-body widget-card">
+                                                    <p class="text-muted">Foundation</p>
+                                                    <h5>Visit</h5>
+                                                    <img class="img-fluid widget-icon" src="https://fcmb.smezone.live/dh/assets/images/course.svg">
+                                                </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="card product-sales">
+                                                <a href="https://weconnectinternational.org" target="_blank">
+                                                <div class="card-body widget-card">
+                                                    <p class="text-muted">We Connect Foundation</p>
+                                                    <h5>Visit</h5>
+                                                    <img class="img-fluid widget-icon" src="https://fcmb.smezone.live/dh/assets/images/course.svg">
+                                                </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="card product-sales">
+                                                <a href="https://nen.org.ng/" target="_blank">
+                                                <div class="card-body widget-card">
+                                                    <p class="text-muted">Nigeria Entrepreneurs Network</p>
+                                                    <h5>Visit</h5>
+                                                    <img class="img-fluid widget-icon" src="https://fcmb.smezone.live/dh/assets/images/course.svg">
+                                                </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="card product-sales">
+                                                <a href="https://www.prowess.org.uk" target="_blank">
+                                                <div class="card-body widget-card">
+                                                    <p class="text-muted">Prowess women in Business</p>
+                                                    <h5>Visit</h5>
+                                                    <img class="img-fluid widget-icon" src="https://fcmb.smezone.live/dh/assets/images/course.svg">
+                                                </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="card product-sales">
+                                                <a href="http://www.youthfortechnology.org" target="_blank">
+                                                <div class="card-body widget-card">
+                                                    <p class="text-muted">Youth for Technology Foundation</p>
+                                                    <h5>Visit</h5>
+                                                    <img class="img-fluid widget-icon" src="https://fcmb.smezone.live/dh/assets/images/course.svg">
+                                                </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="card product-sales">
+                                                <a href="https://www.entrepreneur.com/women" target="_blank">
+                                                <div class="card-body widget-card">
+                                                    <p class="text-muted">Women Entrepreneur</p>
+                                                    <h5>Visit</h5>
+                                                    <img class="img-fluid widget-icon" src="https://fcmb.smezone.live/dh/assets/images/course.svg">
+                                                </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="card product-sales">
+                                                <a href="https://femaleentrepreneurassociation.com/" target="_blank">
+                                                <div class="card-body widget-card">
+                                                    <p class="text-muted">Female Entrepreneur Association</p>
+                                                    <h5>Visit</h5>
+                                                    <img class="img-fluid widget-icon" src="https://fcmb.smezone.live/dh/assets/images/course.svg">
+                                                </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="page-title-box">
+                        <div class="row align-items-center">
+                            <div class="col-md-8">
+                                <h4 class="page-title mb-0">Featured</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card">
+                                    <div class="card-image-info">
+                                            <img class="card-img-top img-fluid" src="assets/images/small/img-6.jpg"
+                                            alt="Card image cap">
+                                            <label class="course-type type-info">Course</label>
+                                    </div>
+                                <div class="card-body">
+                                    <a class="text-black" href="course-single.html">
+                                            <h4 class="card-title font-20 mt-0">Spirit of the Entrepreneur - Cast.i.ng</h4>
+                                    </a>
+                                    
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This card has even longer content than the first
+                                        to show that equal height action.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-image-info">
+                                        <img class="card-img-top img-fluid" src="assets/images/small/img-3.jpg"
+                                        alt="Card image cap">
+                                        <label class="course-type type-info">Course</label>
+                                </div>
+                                
+                                <div class="card-body">
+                                    <a class="text-black" href="course-single.html">
+                                            <h4 class="card-title font-20 mt-0">Getting started with Design - Horpey</h4>
+                                    </a>
+                                    
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This card has even longer content than the first
+                                        to show that equal height action.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card">
+                                    <div class="card-image-info">
+                                            <img class="card-img-top img-fluid" src="assets/images/small/img-7.jpg"
+                                            alt="Card image cap">
+                                            <label class="course-type type-info">Webinar</label>
+                                    </div>
+                                <div class="card-body">
+                                        <a class="text-black" href="course-single.html">
+                                                <h4 class="card-title font-20 mt-0">Effective Selling Skills </h4>
+                                            </a>
+                                    
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This card has even longer content than the first
+                                        to show that equal height action.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- end row -->
+                </div><!-- container-fluid -->
+            </div><!-- content -->
+            <footer class="footer">© 2019 FCMB SMEHub</footer>
+
+        </div><!-- ============================================================== -->
+        <!-- End Right content here -->
+        <!-- ============================================================== -->
+    </div><!-- END wrapper -->
+
+    <!-- FAQs Modal -->
+    <div class="modal fade" data-keyboard="false" data-backdrop="static" id="faqsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="" id="exampleModalLabel">Frequently Asked Questions</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container margin_60_35">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                <div class="card-header bg-info px-1 cursor-pointer py-0" style="background:#5a3092!important" data-toggle="collapse" data-target="#collapseOne" id="headingOne">
+                                    <h2 class="mb-0">
+                                            <button class="btn text-white fs-16" type="button"  aria-expanded="true" aria-controls="collapseOne" style="background:transparent;white-space:normal;text-align:left;font-weight:500;">
+                                              How to list services 
+                                            </button>
+                                        </h2>
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="px-3 py-2">
+                                        <ul class="ml-2">
+                                            <li>Log into the business zone with your login details</li>
+                                            <li>Select ‘offered services’</li>
+                                            <li>Select ‘manage offered services’</li>
+                                            <li>Click ‘add service’</li>
+                                            <li>Enter details of the service, name, description and price (you can list up to 10 services)</li>
+                                            <li>Click submit</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header bg-info px-1 cursor-pointer py-0" style="background:#5a3092!important" data-toggle="collapse" data-target="#collapseTwo" id="headingTwo">
+                                    <h2 class="mb-0">
+                                            <button class="btn collapsed text-white fs-16" style="background:transparent;white-space:normal;text-align:left;font-weight:500;" type="button" aria-expanded="false" aria-controls="collapseTwo">
+                                              How to manage page adverts
+                                            </button>
+                                        </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="px-3 py-2">
+                                        <ul class="ml-2">
+                                            <li>Log into the business zone with your login details</li>
+                                            <li>Select ‘manage page adverts’</li>
+                                            <li>Click ‘add advert ’ (you can add up to 3 advert banners)</li>
+                                            <li>Enter the link you want the advert to redirect to when clicked (it can be a webpage or a YouTube video)</li>
+                                            <li>Upload the image to be used for the advert</li>
+                                            <li>Click create</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header bg-info px-1 cursor-pointer py-0" style="background:#5a3092!important" data-toggle="collapse" data-target="#collapseThree" id="headingTwo">
+                                    <h2 class="mb-0">
+                                            <button class="btn collapsed text-white fs-16" style="background:transparent;white-space:normal;text-align:left;font-weight:500;" type="button" aria-expanded="false" aria-controls="collapseThree">
+                                              How to manage custom request
+                                            </button>
+                                        </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="px-3 py-2">
+                                        <ul class="ml-2">
+                                            <li>Log into the business zone with your login details</li>
+                                            <li>Select ‘request’ and then select ‘custom request’</li>
+                                            <li>View the list of custom requests and click ‘action’ to either process an invoice for a request or decline a request</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header bg-info px-1 cursor-pointer py-0" style="background:#5a3092!important" data-toggle="collapse" data-target="#collapseFour" id="headingTwo">
+                                    <h2 class="mb-0">
+                                            <button class="btn collapsed text-white fs-16" style="background:transparent;white-space:normal;text-align:left;font-weight:500;" type="button" aria-expanded="false" aria-controls="collapseFour">
+                                              What happens when a customer pays for a listed service
+                                            </button>
+                                        </h2>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="px-3 py-2">
+                                        <ul class="ml-2">
+                                            <li>When a user makes payment for a listed service, you will get an email and pop-up notification informing you that payment has been made</li>
+                                            <li>The funds will be received into an FCMB ESCROW account until service has been delivered to the customer</li>
+                                            <li>You will be required to reach out to the customer to acknowledge payment</li>
+                                            <li>Once the buyer confirms service has been delivered, the funds will be transferred to your FCMB account</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header bg-info px-1 cursor-pointer py-0" style="background:#5a3092!important" data-toggle="collapse" data-target="#collapseFive" id="headingTwo">
+                                    <h2 class="mb-0">
+                                            <button class="btn collapsed text-white fs-16" style="background:transparent;white-space:normal;text-align:left;font-weight:500;" type="button" aria-expanded="false" aria-controls="collapseFive">
+                                              What happens when a user makes a custom request
+                                            </button>
+                                        </h2>
+                                </div>
+                                <div id="collapseFive" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="px-3 py-2">
+                                        <ul class="ml-2">
+                                            <li>You will receive an email and a pop notification on your business zone dashboard informing you that a user has requested for a custom service</li>
+                                            <li>You will be required to log into your business zone dashboard to either issue an invoice for the service or decline the service</li>
+                                            <li>Once you issue an invoice, the customer will get a pop-up notification and an email with an invoice and a link to make payment for the service</li>
+                                            <li>When the buyer makes payment, you will get an email and a pop-up notification informing you that payment has been made</li>
+                                            <li>The funds will be received into an FCMB ESCROW account until service has been delivered to the buyer</li>
+                                            <li>You will be required to reach out to the customer to acknowledge payment</li>
+                                            <li>Once the buyer confirms service has been delivered, the funds will be transferred to your FCMB account</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" data-keyboard="false" data-backdrop="static" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="text-align: center;display: block;padding: 10px 0;">
+                    <h6 class="" id="exampleModalLabel">Attention</h6>
+                </div>
+                <div class="modal-body text-center">
+                    <p style="font-weight: 500;font-size: 14px">You must agree to the terms and conditions before you proceed</p>
+                    <form>
+                        <div class="form-check" style="font-size: 16px">
+                            <input type="checkbox" class="form-check-input" id="terms" required>
+                            <label class="form-check-label" for="terms">I agree to the <a href="../terms.html" target="_blank">Terms and Condition</a> </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery  -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/modernizr.min.js"></script>
+    <script src="assets/js/metisMenu.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/waves.js"></script>
+    <script src="plugins/peity-chart/jquery.peity.min.js"></script>
+
+    <!-- Datatable -->
+    <script src="plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="plugins/datatables/dataTables.bootstrap4.min.js"></script><!-- Buttons examples -->
+    <script src="plugins/datatables/dataTables.buttons.min.js"></script>
+    <script src="plugins/datatables/buttons.bootstrap4.min.js"></script>
+    <script src="plugins/datatables/jszip.min.js"></script>
+    <script src="plugins/datatables/pdfmake.min.js"></script>
+    <script src="plugins/datatables/vfs_fonts.js"></script>
+    <script src="plugins/datatables/buttons.html5.min.js"></script>
+    <script src="plugins/datatables/buttons.print.min.js"></script>
+    <script src="plugins/datatables/buttons.colVis.min.js"></script><!-- Responsive examples -->
+    <script src="plugins/datatables/dataTables.responsive.min.js"></script>
+    <script src="plugins/datatables/responsive.bootstrap4.min.js"></script><!-- Datatable init js -->
+    <script src="assets/pages/datatables.init.js"></script><!-- App js -->
+
+    <script src="plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+    <script src="plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="plugins/select2/js/select2.min.js"></script>
+    <script src="plugins/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
+    <script src="plugins/bootstrap-filestyle/js/bootstrap-filestyle.min.js"></script>
+    <script src="plugins/bootstrap-touchspin/js/jquery.bootstrap-touchspin.min.js"></script><!-- Plugins Init js -->
+    <script src="assets/pages/form-advanced.js"></script><!-- App js -->
+
+
+    <!--Morris Chart-->
+    <script src="plugins/morris/morris.min.js"></script>
+    <script src="plugins/raphael/raphael-min.js"></script>
+    <script src="assets/pages/dashboard.js"></script><!-- App js -->
+    <script src="assets/js/app.js"></script>
+    <script type="text/javascript">
+        $(window).on('load',function(){
+            $('#termsModal').modal('show');
+            $("#terms").change(function() {
+                if(this.checked) {
+                    $('#termsModal').modal('hide')
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
