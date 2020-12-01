@@ -1,0 +1,219 @@
+<!DOCTYPE html><html lang="en">
+    <!--begin::Head-->
+    <head>
+        <meta charset="utf-8" />
+        <title>Edu 360 - Register</title>
+        <meta name="description" content="Login page example" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        <!--begin::Fonts-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+        <!--end::Fonts-->
+
+        <!--begin::Page Custom Styles(used by this page)-->
+        <link href="assets/css/pages/login/classic/login-3-v=7.0.5.css" rel="stylesheet" type="text/css" />
+        <!--end::Page Custom Styles-->
+
+        <!--begin::Global Theme Styles(used by all pages)-->
+        <link href="assets/plugins/global/plugins.bundle-v=7.0.5.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/custom/prismjs/prismjs.bundle-v=7.0.5.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/style.bundle-v=7.0.5.css" rel="stylesheet" type="text/css" />
+        <!--end::Global Theme Styles-->
+
+        <!--begin::Layout Themes(used by all pages)-->
+        <!--end::Layout Themes-->
+        <link rel="shortcut icon" href="assets/media/logos/favicon.png" />
+
+
+    </head>
+    <!--end::Head-->
+
+    <!--begin::Body-->
+    <body id="kt_body" class="header-fixed subheader-enabled page-loading">
+        <!--begin::Main-->
+        <div class="d-flex flex-column flex-root">
+            <!--begin::Login-->
+            <div class="login login-3 login-signin-on d-flex flex-row-fluid" id="kt_login">
+                <div class="d-flex flex-center bgi-size-cover bgi-no-repeat flex-row-fluid">
+                    <div class="login-form text-center text-white p-7 position-relative overflow-hidden">
+                        <!--begin::Login Header-->
+                        <div class="d-flex flex-center mb-15">
+                            <a href="../dash/index.html">
+                                <img src="../images/edu-logo.png" class="max-h-100px" alt="" />
+                            </a>
+                        </div>
+                        <!--end::Login Header-->
+
+                        <!--begin::Login Sign up form-->
+                        <div class="">
+                            <div class="py-5">
+                                <h3>Register</h3>
+                                <p class="opacity-60">Choose a registration type</p>
+                            </div>
+                            <div class="diver">
+                            	<select class="form-control h-auto text-white placeholder-white bg-dark-o-70 rounded-pill border-0 py-4 px-8 mb-5 d-select" id="exampleSelects">
+									<option>Register as</option>
+									<option value="attend">Attendee</option>
+								    <option value="school">School</option>
+									<option value="industry">Industry</option>
+									<option value="press">Press</option>
+								</select>
+							</div>
+							<div class="d-attend d-group" style="display: none;">
+	                            <form class="form text-center" action="index.html">
+	                                <div class="form-group">
+	                                    <input class="form-control h-auto text-white placeholder-white opacity-70 bg-dark-o-70 rounded-pill border-0 py-4 px-8" type="text" placeholder="Full Name" />
+	                                </div>
+	                                <div class="form-group">
+	                                    <input class="form-control h-auto text-white placeholder-white opacity-70 bg-dark-o-70 rounded-pill border-0 py-4 px-8" type="text" placeholder="Email" autocomplete="off" />
+	                                </div>
+	                                <div class="form-group">
+	                                    <input class="form-control h-auto text-white placeholder-white opacity-70 bg-dark-o-70 rounded-pill border-0 py-4 px-8" type="password" placeholder="Password" />
+	                                </div>
+	                                <div class="form-group">
+	                                    <input class="form-control h-auto text-white placeholder-white opacity-70 bg-dark-o-70 rounded-pill border-0 py-4 px-8" type="password" placeholder="Confirm Password" />
+	                                </div>
+	                                <div class="form-group text-left px-8">
+	                                    <div class="checkbox-inline">
+	                                        <label class="checkbox checkbox-outline checkbox-white text-white m-0">
+	                                            <input type="checkbox" name="agree" />
+	                                            <span></span>
+	                                            I Agree the <a href="login-3.html#" class="text-white font-weight-bold ml-1">terms and conditions</a>.
+	                                        </label>
+	                                    </div>
+	                                    <div class="form-text text-muted text-center"></div>
+	                                </div>
+	                                <div class="form-group mx-auto">
+	                                    <button id="kt_login_signup_submit" class="btn btn-pill btn-outline-white font-weight-bold opacity-90 px-15 py-3 m-2">Register</button>
+	                                </div>
+	                            </form>
+	                        </div>
+	                        <div class="d-school d-group" style="display: none;">
+	                            <form class="form text-center" action="index.html">
+	                                <div class="form-group">
+	                                    <input class="form-control h-auto text-white placeholder-white opacity-70 bg-dark-o-70 rounded-pill border-0 py-4 px-8" type="text" placeholder="School Name" />
+	                                </div>
+	                                <div class="form-group">
+	                                    <input class="form-control h-auto text-white placeholder-white opacity-70 bg-dark-o-70 rounded-pill border-0 py-4 px-8" type="text" placeholder="Email" autocomplete="off" />
+	                                </div>
+	                                <div class="form-group">
+	                                    <input class="form-control h-auto text-white placeholder-white opacity-70 bg-dark-o-70 rounded-pill border-0 py-4 px-8" type="password" placeholder="Password" />
+	                                </div>
+	                                <div class="form-group">
+	                                    <input class="form-control h-auto text-white placeholder-white opacity-70 bg-dark-o-70 rounded-pill border-0 py-4 px-8" type="password" placeholder="Confirm Password" />
+	                                </div>
+	                                <div class="form-group text-left px-8">
+	                                    <div class="checkbox-inline">
+	                                        <label class="checkbox checkbox-outline checkbox-white text-white m-0">
+	                                            <input type="checkbox" name="agree" />
+	                                            <span></span>
+	                                            I Agree the <a href="login-3.html#" class="text-white font-weight-bold ml-1">terms and conditions</a>.
+	                                        </label>
+	                                    </div>
+	                                    <div class="form-text text-muted text-center"></div>
+	                                </div>
+	                                <div class="form-group mx-auto">
+	                                    <button id="kt_login_signup_submit" class="btn btn-pill btn-outline-white font-weight-bold opacity-90 px-15 py-3 m-2">Register</button>
+	                                </div>
+	                            </form>
+	                        </div>
+	                        <div class="d-industry d-group" style="display: none;">
+	                            <form class="form text-center" action="index.html">
+	                                <div class="form-group">
+	                                    <input class="form-control h-auto text-white placeholder-white opacity-70 bg-dark-o-70 rounded-pill border-0 py-4 px-8" type="text" placeholder="Business Name" />
+	                                </div>
+	                                <div class="form-group">
+	                                    <input class="form-control h-auto text-white placeholder-white opacity-70 bg-dark-o-70 rounded-pill border-0 py-4 px-8" type="text" placeholder="Email" autocomplete="off" />
+	                                </div>
+	                                <div class="form-group">
+	                                    <input class="form-control h-auto text-white placeholder-white opacity-70 bg-dark-o-70 rounded-pill border-0 py-4 px-8" type="password" placeholder="Password" />
+	                                </div>
+	                                <div class="form-group">
+	                                    <input class="form-control h-auto text-white placeholder-white opacity-70 bg-dark-o-70 rounded-pill border-0 py-4 px-8" type="password" placeholder="Confirm Password" />
+	                                </div>
+	                                <div class="form-group text-left px-8">
+	                                    <div class="checkbox-inline">
+	                                        <label class="checkbox checkbox-outline checkbox-white text-white m-0">
+	                                            <input type="checkbox" name="agree" />
+	                                            <span></span>
+	                                            I Agree the <a href="login-3.html#" class="text-white font-weight-bold ml-1">terms and conditions</a>.
+	                                        </label>
+	                                    </div>
+	                                    <div class="form-text text-muted text-center"></div>
+	                                </div>
+	                                <div class="form-group mx-auto">
+	                                    <button id="kt_login_signup_submit" class="btn btn-pill btn-outline-white font-weight-bold opacity-90 px-15 py-3 m-2">Register</button>
+	                                </div>
+	                            </form>
+	                        </div>
+	                        <div class="d-press d-group" style="display: none;">
+	                            <form class="form text-center" action="index.html">
+	                                <div class="form-group">
+	                                    <input class="form-control h-auto text-white placeholder-white opacity-70 bg-dark-o-70 rounded-pill border-0 py-4 px-8" type="text" placeholder="Company Name" />
+	                                </div>
+	                                <div class="form-group">
+	                                    <input class="form-control h-auto text-white placeholder-white opacity-70 bg-dark-o-70 rounded-pill border-0 py-4 px-8" type="text" placeholder="Email" autocomplete="off" />
+	                                </div>
+	                                <div class="form-group">
+	                                    <input class="form-control h-auto text-white placeholder-white opacity-70 bg-dark-o-70 rounded-pill border-0 py-4 px-8" type="password" placeholder="Password" />
+	                                </div>
+	                                <div class="form-group">
+	                                    <input class="form-control h-auto text-white placeholder-white opacity-70 bg-dark-o-70 rounded-pill border-0 py-4 px-8" type="password" placeholder="Confirm Password" />
+	                                </div>
+	                                <div class="form-group text-left px-8">
+	                                    <div class="checkbox-inline">
+	                                        <label class="checkbox checkbox-outline checkbox-white text-white m-0">
+	                                            <input type="checkbox" name="agree" />
+	                                            <span></span>
+	                                            I Agree the <a href="login-3.html#" class="text-white font-weight-bold ml-1">terms and conditions</a>.
+	                                        </label>
+	                                    </div>
+	                                    <div class="form-text text-muted text-center"></div>
+	                                </div>
+	                                <div class="form-group mx-auto">
+	                                    <button id="kt_login_signup_submit" class="btn btn-pill btn-outline-white font-weight-bold opacity-90 px-15 py-3 m-2">Register</button>
+	                                </div>
+	                            </form>
+	                        </div>
+                            <div class="mt-10">
+                                <span class="opacity-70 mr-4">
+                                    Already registered?
+                                </span>
+                                <a href="login.html" class="text-white font-weight-bold">Login</a>
+                            </div>
+                        </div>
+                        <!--end::Login Sign up form-->
+                    </div>
+                </div>
+            </div>
+            <!--end::Login-->
+        </div>
+        <!--end::Main-->
+
+        <!--begin::Global Theme Bundle(used by all pages)-->
+        <script src="assets/plugins/global/plugins.bundle-v=7.0.5.js"></script>
+        <script src="assets/plugins/custom/prismjs/prismjs.bundle-v=7.0.5.js"></script>
+        <script src="assets/js/scripts.bundle-v=7.0.5.js"></script>
+        <!--end::Global Theme Bundle-->
+
+        <!--begin::Page Scripts(used by this page)-->
+        <script src="assets/js/pages/custom/login/login-general-v=7.0.5.js"></script>
+        <!--end::Page Scripts-->
+        <script>
+        	$(document).ready(function(){
+        		$('.d-select').on('change', function(){
+        			$('.d-group').hide();
+        			var val = $(this).val();
+        			$('.d-'+val).show();
+        			$("body,html").animate(
+	                  {
+	                    scrollTop: $(this).offset().top + 200
+	                  },
+	                  1200 //speed
+	                );
+        		})
+        	});
+        </script>
+    </body>
+    <!--end::Body-->
+</html>

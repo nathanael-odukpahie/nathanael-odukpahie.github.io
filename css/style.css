@@ -1,0 +1,25 @@
+.arlo_tm_mobile_menu .mobile_menu_inner{
+	background-color: #000;
+}
+.arlo_tm_mobile_menu .mobile_in .logo img {
+    max-width: 100px;
+}
+.my_trigger .hamburger .hamburger-inner::before, .my_trigger .hamburger .hamburger-inner::after, .my_trigger .hamburger .hamburger-inner{
+	background-color: #fff;
+}
+.arlo_tm_all_wrap[data-color=green] .arlo_title_holder span,
+.arlo_tm_all_wrap[data-color=green] .arlo_tm_progress_wrap .progress_wrap_inner .left .main_title h3 span,
+.arlo_tm_all_wrap[data-color=green] .arlo_tm_hero_header .hero_content .name_holder h3 span,
+.arlo_tm_all_wrap[data-color=green] .arlo_tm_leftpart .inner .menu ul li.current a,
+.arlo_tm_all_wrap[data-color=green] .arlo_tm_leftpart .inner .menu ul li a:hover {
+    color: #5be8c5;
+}
+.arlo_tm_all_wrap[data-color=green] .progress_inner .background .bar_in{
+	background-color: #5be8c5;
+}
+.svg{
+	background-color: #fff;
+}
+.arlo_tm_portfolio .portfolio_list ul li .inner img{
+	height: 170px;
+}
