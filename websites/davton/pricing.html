@@ -69,13 +69,13 @@
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="blog.html" class="d-flex border-bottom">
+                                                <a href="content.html" class="d-flex border-bottom">
                                                     <div class="d-block mr-4">
                                                         <img src="assets/img/content.svg" width="50">
                                                     </div>
                                                     <div class="d-block">
                                                         <div class="font-16 text-dark text-transform-0">Content Development</div>
-                                                        <div class="font-12 mb-4 text-dark">Latest news from us</div>
+                                                        <div class="font-12 mb-4 text-dark">Digitize your courses</div>
                                                     </div>
                                                 </a>
                                             </li>
@@ -231,12 +231,15 @@
                                     <option selected value="30">Annually</option>
                                 </select>
                                 <select class="form-control pricing-select curr border-left font-18 font-weight-bold" id="currency">
-                                    <option value="1">USD</option>
-                                    <option value="2">CAD</option>
-                                    <option selected value="3">NGN</option>
+                                    <option value="usd">USD</option>
+                                    <option value="cad">CAD</option>
+                                    <option selected value="ngn">NGN</option>
                                 </select>
                             </div>
-                            <h4 class="mt-4" id="total-cost"></h4>
+                            <h4 class="mt-4 text-center" id="total-cost"></h4>
+                            <div class="text-center start-now mt-4 mb-1" style="display: none;">
+                                <a href="register.html" class="btn btn-primary font-16">Start Now</a>
+                            </div>
                         </div>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item font-16 font-weight-bold">
@@ -368,9 +371,9 @@
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-lg-2 col-md-4 col-sm-6 col-12 links mb-5 text-center text-sm-left follow">
-                  <h5>Follow us!</h5>
-                  <div class="container">
-                      <div class="row">
+                    <h5>Follow us!</h5>
+                    <div class="container">
+                        <div class="row">
                             <div class="w-100">
                                 <ul>
                                     <li><a href="#" data-toggle="modal" data-target="#partnerModal" class="btn btn-outline-light py-1 px-2"><i class="mdi mdi-android"></i> <span>Refer and Earn</span> </a></li>
@@ -384,44 +387,44 @@
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 col-6 links mb-5">
-                  <h5>Company</h5>
-                  <ul>
-                    <li><a href="about.html">About us</a></li>
-                    <li><a href="team.html">Our team</a></li>
-                  </ul> 
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="team.html">Our team</a></li>
+                    </ul>
+                </div>
+                <!-- <div class="col-lg-2 col-md-4 col-sm-6 col-6 links mb-5">
+                      <h5>Work with us</h5>
+                      <ul>
+                        <li><a href="become.html">Become an instructor</a></li>
+                      </ul>
+                    </div> -->
+                <div class="col-lg-2 col-md-4 col-sm-6 col-6 links mb-5">
+                    <h5>For Businesses</h5>
+                    <ul>
+                        <li><a href="corporate.html">Corporate training</a></li>
+                    </ul>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 col-6 links mb-5">
-                  <h5>Work with us</h5>
-                  <ul>
-                    <li><a href="become.html">Become an instructor</a></li>
-                  </ul> 
+                    <h5>Contact Us</h5>
+                    <ul>
+                        <li><a href="mailto:info@davtonlearn.com">info@davtonlearn.com</a></li>
+                        <li class="mt-2" style="color: #ccc">2nd Floor, <br>RockHaven Office Suites, <br>4 Hughes Avenue, Yaba, <br>Lagos, Nigeria</li>
+                    </ul>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 col-6 links mb-5">
-                  <h5>For Businesses</h5>
-                  <ul>
-                    <li><a href="corporate.html">Corporate training</a></li>
-                  </ul>     
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 col-6 links mb-5">
-                  <h5>Contact Us</h5>
-                  <ul>
-                    <li><a href="mailto:info@davtonlearn.com">info@davtonlearn.com</a></li>
-                    <li class="mt-2" style="color: #ccc">2nd Floor, <br>RockHaven Office Suites, <br>4 Hughes Avenue, Yaba, <br>Lagos, Nigeria</li>
-                  </ul>     
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 col-6 links mb-5">
-                  <h5>Our Partner</h5>
-                  <img src="assets/img/aep-logo.jpg" style="width: 120px">   
+                    <h5>Our Partner</h5>
+                    <img src="assets/img/aep-logo.jpg" style="width: 120px">
                 </div>
             </div>
 
             <div class="row pb-3 text-center">
                 <div class="col-5 col-sm-3 col-lg-2 offset-sm-3 offset-lg-4 terms">
-                  <a href="terms.html">Terms of Use</a> 
+                    <a href="terms.html">Terms of Use</a>
                 </div>
                 <div class="seprator d-sm-inline"></div>
                 <div class="col-5 col-sm-3 col-lg-2 px-0 terms last">
-                  <a href="terms.html"> Privacy Policy </a> 
+                    <a href="terms.html"> Privacy Policy </a>
                 </div>
             </div>
 
@@ -564,15 +567,15 @@
                     rate = 1
                 }
 
-                if (currency == 1) {
+                if (currency == 'usd') {
                     sign = '&#x24;'
                     ex = 0.0026
                 }
-                if (currency == 2){
+                if (currency == 'cad'){
                     sign = 'C&#x24;'
                     ex = 0.0034
                 }
-                if (currency == 3){
+                if (currency == 'ngn'){
                     sign = '&#x20A6;'
                     ex = 1
                 }
@@ -632,7 +635,10 @@
             }
             $('#staff-size').on('input', function(){
                 cal_price();
-
+                if($(this).val()!='')
+                    $('.start-now').show();
+                else
+                    $('.start-now').hide();
             })
             $('#payment-plan').on('change', function(){
                 cal_price();
