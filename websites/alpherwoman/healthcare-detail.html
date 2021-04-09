@@ -98,7 +98,8 @@
                                 <a href="#" class="" data-toggle="dropdown">Develop Myself </a>
                                 <ul class="dropdown-menu" role="menu">
                                    <li><a href="courses.html">Courses</a></li>
-                                   <li><a href="mentoring.html">Mentoring</a></li>
+                                   <li><a href="mentorship.html">Mentorship</a></li>
+                                   <li><a href="blog.html">Blog</a></li>
                                 </ul>
 
                              </li>
@@ -119,9 +120,10 @@
                                 </ul>
                              </li>
                              <li class="header-ticket nav-item">
-                                <a class="ticket-btn btn" href="#" data-toggle="modal" data-target="#exampleModal"> Login 
+                                <a class="ticket-btn btn" href="#" data-toggle="modal" data-target="#login"> Login 
                                 </a>
                              </li>
+
                              <li class="header-ticket nav-item">
                                 <a class="ticket-btn btn" href="#" data-toggle="modal" data-target="#exampleModal"> Get Started
                                 </a>
@@ -146,50 +148,32 @@
         </header>
         <!--/ Header end -->
 
-        <!-- banner start-->
-        <section class="main-slider owl-carousel content other">
-            <div class="banner-item overlay bg-dark">
-
-                <div class="container-fluid px-0">
-                    <div class="row pt-4 no-padding">
-                        <!-- <div class="col-6 discount-card-1">
-                            <div class="post-media post-image-1 p-4 text-white align-self-center">
-                                <div class="text-uppercase font-16 mb-3">Up to</div>
-                                <div class="text-uppercase font-60 discount-percent">40%<br>OFF</div>
-                            </div>
-                        </div> -->
-                        <div class="col-md-6 p-0 d-none d-md-flex">
-                            <div class="post-media p-0 text-white" style="margin-top: 50px">
-                            <img src="images/big.png" class="w-100">
-                        </div>
-                            <!-- Banner content wrap end -->
-                        </div>
-                        <div class="col-md-6">
-                            <div class="banner-content-wrap text-left px-3" style="z-index: 33">
-                                <div class="bread d-flex mb-4">
-                                    <div class="bc font-16 px-1"><a class="text-alpher fw-500" href="index.html">Home</a></div>
-                                    <div class="seperator font-16 px-1"><i class="fa fa-angle-right"></i></div><div class="bc font-16 px-1"><a class="text-alpher fw-500" href="discounts.html">Lifestyle Discounts</a></div>
-                                    <div class="seperator font-16 px-1"><i class="fa fa-angle-right"></i></div>
-                                    <div class="bc active font-16 px-1">Inlaks Energy</div>
-                                </div>
-                                <h1 class="text-alpher font-weight-00" style="text-transform: none;">Inlaks Energy</h1>
-                                <p class="text-white pt-3 pt-md-3 pb-md-3 px-0 font-weight-300 font-20">
-                                    Your one stop portal for learning and networking with other women. Your one stop portal for learning and networking with other women
-                                </p>
-                            </div>
-                            <!-- Banner content wrap end -->
-                        </div>
-                        <!-- col end-->
-
+        <section class="bg-dark pt-3 pb-0 mt-5">
+            <div class="container-fluid px-0">
+                <div class="row no-padding d-flex align-items-center">
+                    <div class="col-md-6">
+                        <img src="https://alpherwoman.com/images/G37qvSYlh8xNq7HRyMJh7I2ENJk0rSYQNJkIZOwr.jpeg" class="w-100">
                     </div>
-                    <!-- row end-->
-                </div>
-                <!-- Container end -->
-            </div>
-            <!-- banner item end-->
+                    <div class="col-md-6">
+                        <div class="banner-content-wrap text-left px-3" style="z-index: 33">
+                            <div class="bread mb-4 d-none d-md-flex">
+                                <div class="bc font-16 px-1"><a class="text-alpher fw-500" href="index.html">Home</a></div>
+                                <div class="seperator font-16 px-1"><i class="fa fa-angle-right"></i></div><div class="bc font-16 px-1"><a class="text-alpher fw-500" href="events.html">Lifestyle Discounts</a></div>
+                                <div class="seperator font-16 px-1"><i class="fa fa-angle-right"></i></div>
+                                <div class="bc active font-16 px-1 text-white">Inlaks Energy</div>
+                            </div>
+                            <h1 class="text-alpher font-weight-00 d-none d-md-flex" style="text-transform: none;">Inlaks Energy</h1>
+                            <p class="text-white pt-3 pt-md-3 pb-md-3 px-0 font-weight-300 font-20 d-none d-md-flex">
+                                Your one stop portal for learning and networking with other women. Your one stop portal for learning and networking with other women
+                            </p>                        
+                        </div>
+                        <!-- Banner content wrap end -->
+                    </div>
+                    <!-- col end-->
 
+                </div>
+            </div>
         </section>
-        <!-- banner end-->
 
         <section class="ts-intro-outcome py-5">
             <div class="container">
@@ -409,7 +393,7 @@
             </div>
 
             <!-- Get Started Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="exampleModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-body p-0">
@@ -440,6 +424,12 @@
                                                 <div class="col-md-12">
                                                     <div class="form-group mb-3">
                                                         <input type="tel" class="form-control form-control-name font-14 fill phone" placeholder="Phone Number" name="subject" id="subject" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group mb-5">
+                                                        <input class="form-control form-control-name font-14 fill password" placeholder="Password" name="password" id="password" type="password" required>
+                                                        <span toggle="#password-field" class="fa font-14 fa-fw fa-eye field_icon toggle-password cursor-pointer" style="position: absolute;top: 14px;right: 25px;"></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -530,7 +520,7 @@
                                                 <button class="btn btn-alpher font-14 submit btn-block" type="submit" style="display: none;" disabled="">Complete Sign Up</button>
                                             </div>
                                             <div class="font-16 mt-4">
-                                                Already a member?<a class="text-alpher activate-login cursor-pointer"> Sign in</a>
+                                                Already a member?<a class="text-alpher activate-login cursor-pointer" data-dismiss="modal" data-target="#login" data-toggle="modal"> Sign in</a>
                                             </div>
                                         </form>
                                         <!-- Contact form end -->
@@ -539,7 +529,19 @@
                                         <img src="images/register.png" class="w-100">
                                     </div>
                                 </div>
-                                <div class="row justify-content-center row-login" style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Login Modal -->
+            <div class="modal fade" id="login" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body p-0">
+                            <div class="container">
+                                <div class="row justify-content-center">
                                     <div class="col-lg-7 px-5 py-5 align-self-center">
                                         <h2 class="font-weight-400 text-alpher mb-4">
                                             Sign in
@@ -552,12 +554,19 @@
                                                         <input class="form-control form-control-name font-14 fill email" placeholder="Email address" name="subject" id="subject" required>
                                                     </div>
                                                 </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group mb-5">
+                                                        <input class="form-control form-control-name font-14 fill password" placeholder="Password" name="password" id="password" type="password" required>
+                                                        <span toggle="#password-field" class="fa font-14 fa-fw fa-eye field_icon toggle-password cursor-pointer" style="position: absolute;top: 14px;right: 25px;"></span>
+                                                    </div>
+                                                </div>
+
                                             </div>
                                             <div class="">
                                                 <button class="btn btn-alpher font-14 submit btn-block" type="submit">Sign in</button>
                                             </div>
                                             <div class="font-16 mt-4">
-                                                New member?<a class="text-alpher activate-register cursor-pointer"> Get started here</a>
+                                                New member?<a class="text-alpher activate-register cursor-pointer" data-dismiss="modal" data-toggle="modal" data-target="#exampleModal"> Get started here</a>
                                             </div>
                                         </form>
                                         <!-- Contact form end -->
@@ -573,7 +582,7 @@
             </div>
 
             <!-- Promote your business Modal -->
-            <div class="modal" id="promoteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal" id="promoteModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-body p-0">
@@ -643,7 +652,7 @@
                                                 <div class="form-row">
                                                     <div class="form-group col-md-12">
                                                         <label for="gender" class="text-grey font-12">Service Description</label>
-                                                        <textarea class="form-control form-control-second font-12 bdesc" name="business_description" placeholder="Tell us about the service" rows="4" id="media-text" required=""></textarea>
+                                                        <textarea class="form-control form-control-second font-12 bdesc" name="business_description" placeholder="Tell us about the service" rows="4" id="media-text" required="" maxlength="200"></textarea>
                                                     </div>
                                                 </div>
 

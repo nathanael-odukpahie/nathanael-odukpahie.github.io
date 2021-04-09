@@ -98,7 +98,8 @@
                                 <a href="#" class="" data-toggle="dropdown">Develop Myself </a>
                                 <ul class="dropdown-menu" role="menu">
                                    <li><a href="courses.html">Courses</a></li>
-                                   <li><a href="mentoring.html">Mentoring</a></li>
+                                   <li><a href="mentorship.html">Mentorship</a></li>
+                                   <li><a href="blog.html">Blog</a></li>
                                 </ul>
 
                              </li>
@@ -119,9 +120,10 @@
                                 </ul>
                              </li>
                              <li class="header-ticket nav-item">
-                                <a class="ticket-btn btn" href="#" data-toggle="modal" data-target="#exampleModal"> Login 
+                                <a class="ticket-btn btn" href="#" data-toggle="modal" data-target="#login"> Login 
                                 </a>
                              </li>
+
                              <li class="header-ticket nav-item">
                                 <a class="ticket-btn btn" href="#" data-toggle="modal" data-target="#exampleModal"> Get Started
                                 </a>
@@ -157,7 +159,7 @@
                     <div class="col-md-6">
                         <img src="images/big.png" class="w-100">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 py-5 py-lg-0">
                         <div class="banner-content-wrap text-left px-3" style="z-index: 33">
                             <div class="bread mb-4 d-none d-md-flex">
                                 <div class="bc font-16 px-1"><a class="text-alpher fw-500" href="index.html">Home</a></div>
@@ -169,6 +171,7 @@
                             <p class="text-white pt-3 pt-md-3 pb-md-3 px-0 font-weight-300 font-20">
                                 Your one stop portal for learning and networking with other women. Your one stop portal for learning and networking with other women
                             </p>
+                            <button class="btn btn-alpher text-uppercase font-14"> Claim Offer</button>
                         </div>
                         <!-- Banner content wrap end -->
                     </div>
@@ -183,16 +186,18 @@
 
             ---->
 
-        <section class="ts-intro-outcome py-5">
+        <section class="ts-intro-outcome py-4">
             <div class="container">
                 <div class="row justify-content-center align-items-center my-3">
-                    <div class="col-sm-4">
+                    <div class="col-md-4">
                         <img src="images/shutterstock_763594540 1.png" class="w-100">
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-md-6 py-4 py-md-0">
                         <p class="font-16">Enjoy up to 20% special discounton selected products for your satisfaction, inclusive of B and B. To enjoy this offer, pay with your Union Bank debit card at the merchant location.</p>
                         <p class="font-16">Terms and conditions apply</p>
-                        <div class="social_boxs">
+                        <p class="font-16">Location: Online, Nigeria</p>
+                        <button class="btn btn-alpher text-uppercase font-14"> Claim Offer</button>
+                        <div class="social_boxs mt-4">
                             <ul>
                                 <!-- <div class="text">FOLLOW US</div> -->
                                 <li class="mr-3 mb-2"><a href="#" target="_blank"><i class="fa fa-facebook-f facebook"></i></a></li>
@@ -422,7 +427,7 @@
             </div>
 
             <!-- Get Started Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="exampleModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-body p-0">
@@ -453,6 +458,12 @@
                                                 <div class="col-md-12">
                                                     <div class="form-group mb-3">
                                                         <input type="tel" class="form-control form-control-name font-14 fill phone" placeholder="Phone Number" name="subject" id="subject" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group mb-5">
+                                                        <input class="form-control form-control-name font-14 fill password" placeholder="Password" name="password" id="password" type="password" required>
+                                                        <span toggle="#password-field" class="fa font-14 fa-fw fa-eye field_icon toggle-password cursor-pointer" style="position: absolute;top: 14px;right: 25px;"></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -543,7 +554,7 @@
                                                 <button class="btn btn-alpher font-14 submit btn-block" type="submit" style="display: none;" disabled="">Complete Sign Up</button>
                                             </div>
                                             <div class="font-16 mt-4">
-                                                Already a member?<a class="text-alpher activate-login cursor-pointer"> Sign in</a>
+                                                Already a member?<a class="text-alpher activate-login cursor-pointer" data-dismiss="modal" data-target="#login" data-toggle="modal"> Sign in</a>
                                             </div>
                                         </form>
                                         <!-- Contact form end -->
@@ -552,7 +563,19 @@
                                         <img src="images/register.png" class="w-100">
                                     </div>
                                 </div>
-                                <div class="row justify-content-center row-login" style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Login Modal -->
+            <div class="modal fade" id="login" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body p-0">
+                            <div class="container">
+                                <div class="row justify-content-center">
                                     <div class="col-lg-7 px-5 py-5 align-self-center">
                                         <h2 class="font-weight-400 text-alpher mb-4">
                                             Sign in
@@ -565,12 +588,19 @@
                                                         <input class="form-control form-control-name font-14 fill email" placeholder="Email address" name="subject" id="subject" required>
                                                     </div>
                                                 </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group mb-5">
+                                                        <input class="form-control form-control-name font-14 fill password" placeholder="Password" name="password" id="password" type="password" required>
+                                                        <span toggle="#password-field" class="fa font-14 fa-fw fa-eye field_icon toggle-password cursor-pointer" style="position: absolute;top: 14px;right: 25px;"></span>
+                                                    </div>
+                                                </div>
+
                                             </div>
                                             <div class="">
                                                 <button class="btn btn-alpher font-14 submit btn-block" type="submit">Sign in</button>
                                             </div>
                                             <div class="font-16 mt-4">
-                                                New member?<a class="text-alpher activate-register cursor-pointer"> Get started here</a>
+                                                New member?<a class="text-alpher activate-register cursor-pointer" data-dismiss="modal" data-toggle="modal" data-target="#exampleModal"> Get started here</a>
                                             </div>
                                         </form>
                                         <!-- Contact form end -->
@@ -586,7 +616,7 @@
             </div>
 
             <!-- Promote your business Modal -->
-            <div class="modal" id="promoteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal" id="promoteModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-body p-0">
@@ -656,7 +686,7 @@
                                                 <div class="form-row">
                                                     <div class="form-group col-md-12">
                                                         <label for="gender" class="text-grey font-12">Service Description</label>
-                                                        <textarea class="form-control form-control-second font-12 bdesc" name="business_description" placeholder="Tell us about the service" rows="4" id="media-text" required=""></textarea>
+                                                        <textarea class="form-control form-control-second font-12 bdesc" name="business_description" placeholder="Tell us about the service" rows="4" id="media-text" required="" maxlength="200"></textarea>
                                                     </div>
                                                 </div>
 

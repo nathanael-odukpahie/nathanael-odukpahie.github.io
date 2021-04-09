@@ -301,6 +301,11 @@ jQuery(function ($) {
 
    
    // scrollme.init();
-
+   
+   var input = document.querySelector(".phone");
+   window.intlTelInput(input, {
+     preferredCountries: ['ng'],
+     utilsScript: "js/utils.js",
+   });
 
 });

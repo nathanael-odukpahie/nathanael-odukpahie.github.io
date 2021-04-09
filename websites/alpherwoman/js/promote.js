@@ -44,4 +44,10 @@ $(document).ready(function(){
         $('.first-part').hide();
         $('.second-part').show();
     })
+    var input = document.querySelector(".bphone");
+              window.intlTelInput(input, {
+                preferredCountries: ['ng'],
+                utilsScript: "js/utils.js",
+              });
+    
 });

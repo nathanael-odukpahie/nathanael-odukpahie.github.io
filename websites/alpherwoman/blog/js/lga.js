@@ -1,11 +1,4 @@
 ﻿$(document).ready(function() {
-    $('#datepicker').datepicker({
-        uiLibrary: 'bootstrap4'
-    });
-    $(':password').showPassword({
-        linkRightOffset: 5,
-        linkTopOffset: 11
-    });
 
     $(function(){
         var chbxs = $(':checkbox[required]');
