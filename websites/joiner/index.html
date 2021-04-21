@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Joiner's Kitchen</title><meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<img src="img/logo-large.png">
+	</header>
+
+	<main>
+		<section class="product">
+			<div class="product-details">
+				<div class="product-label">
+					<span class="font-10">Product label</span>
+				</div>
+				<div class="product-title font-20">Product Title</div>
+				<div class="product-price font-15">From £10</div>
+				<div class="product-desc font-12">This is a long product description that displays on the webshop homepage. It has plenty of room to describe whatever it is in full. We know what this is but I have to keep typing to show an example of what more text looks like.</div>
+				<div class="product-subtext font-10">This card is valid for one year after purchase</div>
+			</div>
+
+			<div class="price card">
+				<div class="font-10">Select an option</div>
+				<select>
+				  <option data-display="Price">Price</option>
+				  <option>£10</option>
+				  <option>£20</option>
+				  <option>£30</option>
+				  <option>£40</option>
+				</select>
+			</div>
+			
+			<div class="message card">
+				<div class="font-10">Want to add a message? (Optional)</div>
+				<textarea class="textarea-message font-15" maxlength="200" rows="4" placeholder="Start typing..."></textarea>
+				<div class="count font-8">
+					<span class="current-count">0</span>
+					/
+					<span class="max-count">200</span>
+				</div>
+			</div>
+
+			<div class="basket show-order cursor">
+				<button class="btn btn-default">
+					<img src="img/basket.svg">
+					<div class="font-12">Add to basket</div>
+				</button>
+			</div>
+		</section>
+
+		<section class="popup">
+			<div class="popup-content text-center">
+				<div class="popup-header text-right">
+					<img class="hide-order cursor" src="img/close.svg">
+				</div>
+				<div class="popup-body">
+					<div class="check lh">
+						<div class="icon-1"><img src="img/icon-1.svg"></div>
+						<div class="icon-2"><img src="img/icon-2.svg"></div>
+						<div class="icon-3"><img src="img/icon-3.svg"></div>
+						<!-- <img src="img/basket-check.svg"> -->
+					</div>
+					<div class="quantity font-15 font-bold text-dark">1x</div>
+					<div class="font-15 font-bold text-dark">Product Title</div>
+					<div class="text-dark font-12">added to basket</div>
+				</div>
+				<div class="popup-footer">
+					<div class="basket">
+						<button class="btn btn-default">
+							<img src="img/basket.svg">
+							<div class="font-12">Checkout</div>
+						</button>
+					</div>
+					<div class="basket hide-order cursor">
+						<button class="btn btn-default btn-2">
+							<div class="font-12">or continue shopping</div>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha512-NqYds8su6jivy1/WLoW8x1tZMRD7/1ZfhWG/jcRQLOzV1k1rIODCpMgoBnar5QXshKJGV7vi0LXLNXPoFsM5Zg==" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</html>
